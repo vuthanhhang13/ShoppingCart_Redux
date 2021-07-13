@@ -1,0 +1,45 @@
+img {
+  width: 210px;
+  height: 300px;
+  margin-bottom: 18px;
+}
+.content{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.app{
+  /* display: flex; */
+  width: 100%;
+}
+.App-logo{
+  width: 50px;
+  height:30px;
+  
+}
+.title{
+  text-align: center;
+  color: rgba(92, 86, 86, 0.9);
+  font-size: 30px;
+}
+.item{
+  text-align: center;
+  color: rgba(92, 86, 86, 0.8);
+  width: 20%;
+  float: left;
+}
+button{
+  margin-bottom: 25px;
+}
+.name,.cost{
+  margin: 5px 0;
+}
+.goto{
+  padding: 10px;
+  margin-left: 10px;
+}
+.App-header{
+  width: 100%;
+  height: 75px;
+  background-color: aquamarine;
+}

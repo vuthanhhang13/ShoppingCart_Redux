@@ -1,0 +1,227 @@
+
+.login-label{
+  text-align: center;
+  font-size:1.7rem;
+  font-weight: bold;
+  padding: 15px 0px;
+  color:#000
+}
+.btn-submit-login{
+  /* text-align: center;
+  margin:auto;
+  width: 50%;
+  height: 55px; */
+  width: 60%;
+}
+.App-header .form-view{
+  animation: formAnimation 1s ease;
+}
+.btn-login-facebook{
+  width: 100%;
+  height: 40px;
+  background-color: #3578E5;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+  border:none
+}
+.fb-container{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  width: 100%;
+}
+.fb-container span{
+  width: 60%;
+}
+.label-account{
+  font-size: 14px;
+}
+.btn-switch{
+  color: #707070;
+  margin-left:10px;
+  font-weight: bold;
+}
+.hr-text{
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: 0.5;
+  width: 100%;
+  margin:15px 0
+}
+.hr-text::before{
+  content: "";
+  background: linear-gradient(to right, #caced5, #caced5, #caced5);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+}
+.hr-text::after{
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  padding: 0 0.5em;
+  line-height: 1.5em;
+  color: #4f4d5b;
+  font-weight: bold;
+  background-color: #f6f6f7;
+}
+#dialog-login .dialog-login-container{
+  width: 300px;
+  padding:10px;
+  position: relative;
+}
+#dialog-login .dialog-marketing-container{
+  width: 400px;
+  padding: 10px;
+  position: relative;
+  border-radius: 6px;
+}
+#dialog-login .content-dialog{
+  display:flex;
+  flex-direction: column;
+}
+#dialog-login .content-dialog span{
+  color:#454F63;
+  font-size: 12px;
+}
+#dialog-login .content-dialog span.label{
+  font-weight: bold;
+  font-size: 14px;
+}
+#dialog-login .action-container{
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin: 15px 0;
+}
+#dialog-login .action-container .button{
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #CECECE;
+  margin: 0 5px;
+}
+#dialog-login .close-icon{
+  position: absolute;
+  right: 5px;
+  top: -30px
+}
+#dialog-region .item-region{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-top: .4px solid rgba(0,0,0,0.3);
+  border-bottom: .4px solid rgba(0,0,0,0.3);
+  padding: 10px 0;
+  color: inherit;
+}
+#dialog-region .item-region:nth-child(2){
+  border-top: none !important;
+}
+#dialog-region .item-region:last-child{
+  border-bottom: none !important;
+}
+.input-region:hover, .input-region:focus{
+  color:inherit
+}
+
+.container-marketing{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.container-marketing__img{
+  width: 150px;
+  height: 150px;
+}
+.container-marketing__img img{
+  width: 100%;
+}
+.container-marketing__content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+  padding-left: 15px;
+}
+.container-marketing__content span{
+  color: #000;
+  font-size: 15px;
+  line-height: 1.2;
+}
+.container-marketing__button a{
+  background-color: #ff881d;
+  border-color: white;
+  border-radius: 6px;
+  border-width: 0px;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  justify-content: center;
+  border-style: solid;
+  cursor: pointer;
+  display: flex;
+  padding: 8px 14px;
+  text-decoration: none;
+  user-select: none;
+  width: 100%;
+  word-break: break-word;
+  box-sizing: border-box;
+  margin: 22px 0;
+}
+.container-marketing__button a:hover{
+  color: #fff;
+}
+@keyframes formAnimation{
+  0%{
+      opacity: 0;
+      transform: translateY(-40%) translateX(-50%)
+  }
+  100%{
+      opacity: 1;
+      transform: translateY(-50%) translateX(-50%)
+  }
+}
+
+@-webkit-keyframes formAnimation{
+  0%{
+      opacity: 0;
+      transform: translateY(-40%) translateX(-50%)
+  }
+  100%{
+      opacity: 1;
+      transform: translateY(-50%) translateX(-50%)
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+  .App-header .form-view{
+      width: 40%;
+  }
+}
+
+@media screen and (max-width:600px){
+  .App-header .form-view{
+      width: 85%;
+      padding:12px 20px 20px 20px
+  }
+  #dialog-login .dialog-login-container{
+      width: 95%;
+  }
+  #dialog-login .dialog-marketing-container{
+      width: 95%;
+  }
+}
